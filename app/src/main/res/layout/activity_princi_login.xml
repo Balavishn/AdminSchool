@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    android:layout_height="match_parent"
+    tools:context=".PrinciLogin">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/doodle">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/indivual_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Principal Login"
+        android:textColor="@color/brown"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/adminname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika" />
+
+    <EditText
+        android:id="@+id/adminpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:textColor="@color/brown"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika" />
+
+    <Button
+        android:layout_margin="40dp"
+        android:id="@+id/adminlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/andika"/>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

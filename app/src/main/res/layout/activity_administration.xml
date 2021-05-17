@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".Administration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/doodle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Student Administraion Form"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_firstname"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_lastname"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_fathername"
+            android:hint="Father's Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_mothername"
+            android:hint="Mother's Name"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_mobile"
+            android:hint="Mobile Number"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email ID"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_dob"
+            android:hint="Date Of Birth(DD/MM/YYYY)"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_aadharno"
+            android:hint="Aadhar Number"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_city"
+            android:hint="Place of Birth City"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_state"
+            android:hint="Place of Birth State"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_mothertongue"
+            android:hint="Mother Tongue"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_religion"
+            android:hint="Religion(Hindu/Muslim/Christian)"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_caste"
+            android:hint="Caste"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_category"
+            android:hint="Community(BC/MBC/OC/SC/ST)"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_lastSchool"
+            android:hint="Name of the School Last Attended"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_standard"
+            android:hint="Standard to which admission is sought(LKG-12th)"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_address"
+            android:hint="Residential Address"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pincode"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medidet"
+            android:padding="10dp"
+            android:text="Medical Information"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_bloodgrp"
+            android:hint="Blood Group(A,B,AB,O)"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_identimark"
+            android:hint="Identification Marks"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_phyprblm"
+            android:hint="Physical Problems"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp"  />
+        <Button
+            android:layout_margin="40dp"
+            android:id="@+id/bt_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

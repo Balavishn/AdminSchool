@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/subject_singlee_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar_sub"
+        android:layout_gravity="center"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_start_angle="0"
+        app:cpb_background_progressbar_width="15dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_color_start="#F44336"
+        app:cpb_progressbar_color_end="#69F61C"
+        app:cpb_progressbar_color_direction="right_to_left"
+        app:cpb_round_border="true"
+        tools:layout_editor_absoluteY="58dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

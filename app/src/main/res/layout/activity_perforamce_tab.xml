@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    android:orientation="vertical"
+    tools:context=".Perforamce_tab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/doodle">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/indivual_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Performance Tab"
+            android:textColor="@color/brown"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        app:tabTextColor="@color/cardview_dark_background"
+        app:tabSelectedTextColor="@color/cardview_light_background"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+</LinearLayout>

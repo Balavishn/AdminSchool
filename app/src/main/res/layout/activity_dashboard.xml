@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/doodle">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DashBoard"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/bacground"
+                android:id="@+id/Admin_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/doodle"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="3dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/admin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/andika"
+                        android:textColor="@color/brown"
+                        android:textSize="20sp"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/bacground"
+                android:id="@+id/principal_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/doodle"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="3dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/principal"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Principal"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/andika"
+                        android:textColor="@color/brown"
+                        android:textSize="20sp"
+                        android:layout_margin="2dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

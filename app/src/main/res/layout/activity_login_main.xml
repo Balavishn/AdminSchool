@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".Admin_MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/doodle">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Page"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/andika"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fees structure"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/andika"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/administration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administration"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/andika"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:fontFamily="@font/andika"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

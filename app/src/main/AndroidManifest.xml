@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adminschooll">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Administration">
+        </activity>
+        <activity
+            android:name=".ui.attendace_tab.Attendance_tab"
+            android:label="@string/title_activity_attendance_tab">
+
+        </activity>
+        <activity android:name=".splash_screen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".indivual_analysis"></activity>
+        <activity
+            android:name=".Perforamce_tab"
+            android:label="@string/title_activity_perforamce_tab" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".IntroActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LeaveRequest" />
+        <activity android:name=".FeeStructure" />
+        <activity android:name=".AdminEvent" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Admin_MainActivity" />
+        <activity android:name=".PrinciLogin" />
+        <activity android:name=".Principal_MainActivity" />
+        <activity android:name=".Performance" />
+        <activity android:name=".Attendence" />
+    </application>
+
+</manifest>

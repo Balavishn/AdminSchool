@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".AdminEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/doodle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Page"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/andika"
+            android:hint="Enter Event Title"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="25sp"
+            android:clickable="true"
+            android:editable="false"
+            android:textSize="20sp"
+            android:fontFamily="@font/andika"
+            android:hint="Enter date"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="date"
+            tools:ignore="Deprecated"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:hint="Enter your description"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/andika"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:minLines="2"
+            android:scrollbars="vertical" />
+
+
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/set_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timePicker1"
+            android:layout_alignTop="@+id/set_button"
+            android:text="@string/time_current"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/time_selected"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/time_pick"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="setTime"
+            android:text="@string/time_save"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Submit" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".Section_mark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doodle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/indivual_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Section Wise Mark"
+            android:textColor="@color/brown"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <Spinner
+                android:id="@+id/section_mark_classs_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/classs"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/section_mark_sec_mark"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sec"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="40dp"
+            android:id="@+id/section_mark_get_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Marks"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section_mark_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/andika"/>
+
+            <TextView
+                android:id="@+id/section_mark_rank_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mark"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/andika"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/section_mark_performance_mark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
